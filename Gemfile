@@ -41,6 +41,8 @@ gem 'awesome_print', '~> 1.8'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
+gem 'jquery-rails'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

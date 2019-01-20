@@ -8,7 +8,18 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body class="login-body">
-    <%= yield %>
+      
+  <body class="admin">
+
+    <%= render 'layouts/dashboard' %>
+  
+
+    <div class="content-body">   
+    <div class="jumbotron">
+      <%= render "layouts/notice" %> 
+      <%= yield %>  
+    </div>
+        
+    </div>
   </body>
 </html>
