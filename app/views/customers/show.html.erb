@@ -1,4 +1,10 @@
-<p id="notice"><%= notice %></p>
+<div class="image-container">
+  <% if @customer.avatar.attached? %>
+    <%= image_tag @customer.avatar, class: "image-display"%>
+  <% else %>
+    <h1>No image</h1>
+  <% end %>
+</div>
 
 <p>
   <strong>Username:</strong>

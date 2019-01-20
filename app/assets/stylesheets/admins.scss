@@ -30,3 +30,16 @@
   text-align: center;
   color: white;
 }
+
+.image-container{
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 3px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.image-display{
+  width: 100%;
+}

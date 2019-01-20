@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="field">
     <%= form.label :serial_no %>
     <%= form.text_field :serial_no %>
   </div>
@@ -23,7 +28,7 @@
 
   <div class="field">
     <%= form.label :supplier_id %>
-    <%= form.text_field :supplier_id %>
+    <%= form.select :supplier_id, options_from_collection_for_select(Supplier.all, :id, :name, product.supplier.present? ? product.supplier.id : nil) %>
   </div>
 
   <div class="field">

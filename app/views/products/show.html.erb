@@ -1,4 +1,10 @@
-<p id="notice"><%= notice %></p>
+<div class="image-container">
+  <% if @product.image.attached? %>
+    <%= image_tag @product.image, class: "image-display"%>
+  <% else %>
+    <h1>No image</h1>
+  <% end %>
+</div>
 
 <p>
   <strong>Serial no:</strong>
@@ -12,12 +18,12 @@
 
 <p>
   <strong>Supplier:</strong>
-  <%= @product.supplier %>
+  <%= @product.supplier.name %>
 </p>
 
 <p>
   <strong>Category:</strong>
-  <%= @product.category %>
+  <%= @product.category.name %>
 </p>
 
 <p>
