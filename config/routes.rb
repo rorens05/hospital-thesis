@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :transactions
+  resources :payment_methods
+  resources :products
+  resources :customers
+  resources :suppliers
+  resources :categories
   devise_for :admins
   resources :admins
   get 'dashboard/index'

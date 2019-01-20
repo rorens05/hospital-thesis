@@ -2,10 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .content-body{
-  z-index: 1;
-  position: fixed;
-  padding: 60px 0 0 300px;
-  width: 100%;
   background-color: #D7CCC8;
+  margin-left: 300px;
+  padding: 70px 20px 0 20px;
+  box-sizing: border-box;
+  display:block;
+  overflow: hidden;
+}
+
+.overflow{
+  overflow: auto;
+  width: 100%;
+}
+.content-body table{
+  width: 100%;
+}
+.content-body table,.content-body td,.content-body th{
+  border-collapse: collapse;
+  border: 1px solid gray;
+  padding: 5px 10px;
+}
+
+.content-body th{
+  background-color: #795548;
+  text-align: center;
+  color: white;
 }

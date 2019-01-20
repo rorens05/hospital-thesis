@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_ordered: 2019-01-20 22:31:41
+  customer: one
+  shipping_fee: 
+  payment_method: one
+  verified: false
+  delivery_date: 2019-01-20 22:31:41
+
+two:
+  date_ordered: 2019-01-20 22:31:41
+  customer: two
+  shipping_fee: 
+  payment_method: two
+  verified: false
+  delivery_date: 2019-01-20 22:31:41
